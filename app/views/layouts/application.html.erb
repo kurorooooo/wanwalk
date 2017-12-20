@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>wanwalk</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <%= link_to("wanwalk", "/") %>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <%= link_to("wanwalkとは", "/") %>
+        </li>
+        <li>
+          <%= link_to("ウォーカーを探す", "/") %>
+        </li>
+
+        <li>
+          <%= link_to("マイページ", "/") %>
+        </li>
+        <li>
+          <%= link_to("新規登録", "/") %>
+        </li>
+
+
+      </ul>
+    </header>
+
+    <%= yield %>
+
+    <footer>
+      <div class="container">
+        <a href="https://www.facebook.com/Wanwalk-174478389811309/" class="btn facebook"><span class="fa fa-facebook"></span>Facebook</a>
+        <a href="https://twitter.com/wanwalk" class="btn twitter"><span class="fa fa-twitter"></span>Twitter</a>
+        <img src="">
+        <p>One walk for Wan trust.</p>
+      </div>
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content = "wanwalk">
+    <meta content = "wanwalk">
+    <meta author = "Kakeru Kurosawa">
+    <title>wanwalk</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!--<header>
+      <div class="container">
+        <div class="header-left">
+          <img class="logo" src="">
+        </div>
+        <div class="header-right">
+          <a href="#" class="login">ログイン</a>
+        </div>
+      </div>
+    </header>
+  -->
+    <div class="top-wrapper">
+      <div class="container">
+
+        <h1>wanwalk</h1>
+        <h2>スマホ１つで簡単お散歩代行。</h2>
+        <p>”wanwalk”は、新しい愛犬のお散歩代行サービスです。<br >スマホ１つで簡単に安全に、<br >信頼できるウォーカーを見つけることができます。</p>
+
+        <div class="btn-wrapper">
+          <div class="btn signup"><%= link_to("新規登録はこちら", "/") %></div>
+          <!--<p>or sign up with</p>
+          -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h1>wanwalk Walkers</h1>
+          <p>wanwalk ウォーカーは厳正な審査によって選ばれています。</p>
+        </div>
+        <div class="lessons">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="">
+              <p>I</p>
+            </div>
+            <p class="txt-contents">経験 Experience</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="">
+              <p>C</p>
+            </div>
+            <p class="txt-contents">熱意 Passion</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="">
+              <p>K</p>
+            </div>
+            <p class="txt-contents">信頼 Trust</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>wanwalk ウォーカーを<br >使ってみましょう。</h2>
+          <h3>One walk for Wan trust.</h3>
+        </div>
+        <span class="btn message"><%= link_to("さっそく使ってみる", "/") %></span>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+
+  background-size: cover;
+  color: white;
+  text-align: center;
+
+}
+
+.top-wrapper h1 {
+  opacity: 0.95;
+  font-size: 45px;
+  letter-spacing: 3px;
+}
+
+.top-wrapper h2 {
+  opacity: 0.8;
+}
+
+.top-wrapper p {
+  font-weight: bold;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+  color: white;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  /* positionプロパティをfixedに、topを0に指定してください */
+  position: fixed;
+  top: 0;
+  /* z-indexを10に指定してください */
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+.lesson-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+
+}
+
+.message-wrapper h2 {
+  color: white;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+
+</style>
